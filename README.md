@@ -1,39 +1,74 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Papear Scissors
+    Rock Papear Scissors is a simple straight forward mini game. 
 
-Welcome,
+    ![Responsice Mockup](https://github.com/rhoshan-d/autoghost/blob/main/readme_assets/autoghost_mockup.png)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+### Existing Features
 
-## Codeanywhere Reminders
+- __Buy Now section__
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+  - This section will display to the user a list of all the current vehicles that are available to be bought. 
+  - This section will be updated as these times change to keep the user up to date on our new inventory/stock. 
+  - If a user clicks on the buy now button it will open a new tab linking them to the cars manufacturer.
 
-`python3 -m http.server`
+![Buy Now](https://github.com/rhoshan-d/autoghost/blob/main/readme_assets/autoghost_buy_now.png)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- __The Footer__ 
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+  - The footer section includes links to the relevant social media sites for Rock Papear Scissors. The links will open to a new tab to allow easy navigation for the user. 
+  - The footer is valuable to the user as it encourages them to keep connected via social media
 
-`http_server`
+![Footer](https://github.com/rhoshan-d/autoghost/blob/main/readme_assets/autoghost_footer.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __Customer Photos__
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+  - The customer photos will provide the user with supporting images to see what previous owners have purchased at a bargin!. 
+  - This section is valuable to the user as they will be alot more incentivize to consider purchasing a vehicle. I also made the images clickable and they will take you to that manufacturers site to purchase.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Customer Photos](https://github.com/rhoshan-d/autoghost/blob/main/readme_assets/autoghost_customer_photos.png)
 
-To log into the Heroku toolbelt CLI:
+### Features Left to Implement
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- Making the Buy Now section more compact.
+- Make images a little smaller.
+- Correct the Buy Now button position.
+- Hide navbar on scroll down and show on scroll up.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## Testing 
 
----
+<!-- I began by using Love Maths as a reference since I lack expertise in design and lean more towards backend development, where my interests lie. I ensured responsiveness across all screen sizes, from mobile to desktop, was a priority achieved through media queries and flexible styling. The cover text banner smoothly adjusts with tab resizing. Initially, the "Buy now" button appeared satisfactory, but a last-minute fix was necessary due to an error uncovered during code validation (I nested a button element within an <a> element oops!). While aiming to minimize the use of images for performance reasons, I incorporated hover effects for visual appeal, maintaining a consistent blue theme throughout. -->
 
-Happy coding!
+### Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](/readme_assets/TODO.png)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](/readme_assets/TODO.png)
+
+### Unfixed Bugs
+
+- TO DO
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+- In the GitHub repository, navigate to the Settings tab 
+- From the source section drop-down menu, select the Master Branch
+- Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+The live link can be found here - https://rhoshan-d.github.io/autoghost/ 
+
+
+## Credits 
+
+- TO DO
+
+### Content 
+
+- TO DO
+
+### Media
+
+- TO DO
