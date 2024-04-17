@@ -1,7 +1,7 @@
 # Rock Papear Scissors
   Rock Papear Scissors is a simple straight forward mini game!!. 
 
-  ![Responsice Mockup](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/rock_paper_mockup.png)
+  ![Responsice Mockup](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/am-i-responsive.png)
 
 ## Features
 
