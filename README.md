@@ -31,7 +31,8 @@
 
 - Remove money from balance (if exists) to play
 - Level system (level 1 - 5 more rewards)
-- 
+- Option to select how many rounds (more risk more reward)
+- Win streak counter
 
 ## Testing 
 

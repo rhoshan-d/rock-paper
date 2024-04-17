@@ -65,13 +65,12 @@ button:hover {
 /* footer */
 
 footer {
-    margin-top: 150px;
+    margin-top: auto;
     color: #00f8b9;
 }
 
 /* for mobile screens */
 @media only screen and (max-width: 600px) {
-    
     .main-container {
       width: 90%;
       margin-top: 20vh;
