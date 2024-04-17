@@ -8,6 +8,8 @@ body {
     font-style: normal;
     text-align: center;
     color: #445361;
+    background: url('/assets/images/big-background.jpg') no-repeat fixed center;
+    background-size: cover;
 }
 
 button {
@@ -15,6 +17,17 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #445361;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.35);
+    background-color: #00f8b9;
+    color: #445361;
 }
 
 /* Game header */

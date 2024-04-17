@@ -1,9 +1,9 @@
-const availableOptions = ['rock', 'paper', 'scissors']; // choices / options the player will have
+const availableOptions = ['rock', 'paper', 'scissors'];
 const randomWinPrize = ['100' , '200' , '500' , '900' , '1000']
 let gameInProgress = false
 let curRound = 0
 let userBalance = 0
-let MaxRounds = 2
+let MaxRounds = 5
 
 document.getElementById('rock').addEventListener('click', function() {
     PlayGame('rock');
@@ -49,7 +49,7 @@ function PlayGame(playerChoice) {
 }
 
 function StartRoundChecks () {
-    if (gameInProgress) return; // prevent being ran mutiple times
+    if (gameInProgress) return;
     const playerBalance = document.getElementById('user-balance');
     playerBalance.innerText = userBalance == 0 ? `Balance: $0` : 'Balance: ' + userBalance.toLocaleString('en-US', { style: 'currency', currency: 'EUR' })
     setInterval(() => {

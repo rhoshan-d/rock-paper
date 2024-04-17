@@ -7,34 +7,31 @@
 
 ### Existing Features
 
-- __Buy Now section__
+- __User Balance__
 
-  - This section will display to the user a list of all the current vehicles that are available to be bought. 
-  - This section will be updated as these times change to keep the user up to date on our new inventory/stock. 
-  - If a user clicks on the buy now button it will open a new tab linking them to the cars manufacturer.
+  - This section will display to the user their current balance from winning the game.
+  - This section will be updated whenever a player / user wins a total of 5 rounds by default
+![User Balance](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/rock_paper_userbal.png)
 
-![Buy Now](https://github.com/rhoshan-d/autoghost/blob/main/readme_assets/autoghost_buy_now.png)
+- __Round System__ 
 
-- __The Footer__ 
+  - A simple enough system that will track the players wins until they have completed the maxround of 5. 
+  - After completeting all 5 rounds the user will win a randomly selected prize amount ($100-$1000)
+  - This will also make the player more engaged and a goal to reach alogn with incentive to play
 
-  - The footer section includes links to the relevant social media sites for Rock Papear Scissors. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
+![Round System](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/round-system.png)
 
-![Footer](https://github.com/rhoshan-d/autoghost/blob/main/readme_assets/autoghost_footer.png)
+- __Prize & Awards__
 
-- __Customer Photos__
+  - Players / users can earn from $100 all the way to $1000
 
-  - The customer photos will provide the user with supporting images to see what previous owners have purchased at a bargin!. 
-  - This section is valuable to the user as they will be alot more incentivize to consider purchasing a vehicle. I also made the images clickable and they will take you to that manufacturers site to purchase.
-
-![Customer Photos](https://github.com/rhoshan-d/autoghost/blob/main/readme_assets/autoghost_customer_photos.png)
+![Prize & Awards](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/prize-awards.png)
 
 ### Features Left to Implement
 
-- Making the Buy Now section more compact.
-- Make images a little smaller.
-- Correct the Buy Now button position.
-- Hide navbar on scroll down and show on scroll up.
+- Remove money from balance (if exists) to play
+- Level system (level 1 - 5 more rewards)
+- 
 
 ## Testing 
 
