@@ -1,7 +1,7 @@
 # Rock Papear Scissors
-    Rock Papear Scissors is a simple straight forward mini game. 
+  Rock Papear Scissors is a simple straight forward mini game!!. 
 
-    ![Responsice Mockup](https://github.com/rhoshan-d/autoghost/blob/main/readme_assets/autoghost_mockup.png)
+  ![Responsice Mockup](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/rock_paper_mockup.png)
 
 ## Features
 
@@ -19,13 +19,13 @@
   - After completeting all 5 rounds the user will win a randomly selected prize amount ($100-$1000)
   - This will also make the player more engaged and a goal to reach alogn with incentive to play
 
-![Round System](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/round-system.png)
+![Round System](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/round_system.png)
 
 - __Prize & Awards__
 
   - Players / users can earn from $100 all the way to $1000
 
-![Prize & Awards](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/prize-awards.png)
+![Prize & Awards](https://github.com/rhoshan-d/rock-paper/blob/main/readme_assets/prize_awards_system.png)
 
 ### Features Left to Implement
 
@@ -35,18 +35,20 @@
 
 ## Testing 
 
-<!-- I began by using Love Maths as a reference since I lack expertise in design and lean more towards backend development, where my interests lie. I ensured responsiveness across all screen sizes, from mobile to desktop, was a priority achieved through media queries and flexible styling. The cover text banner smoothly adjusts with tab resizing. Initially, the "Buy now" button appeared satisfactory, but a last-minute fix was necessary due to an error uncovered during code validation (I nested a button element within an <a> element oops!). While aiming to minimize the use of images for performance reasons, I incorporated hover effects for visual appeal, maintaining a consistent blue theme throughout. -->
+The goal of this project was to be a simple enough but still engaging rock paper scissors game. You play against bob the computer and if you can win 5 rounds in a row you will receieve a random prize from the prize pool. I had the plan of adding a currency system but due to the lack of time and things going on that was not fully complete.
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](/readme_assets/TODO.png)
+  - No errors were returned when passing through the official [W3C validator](/readme_assets/w3html_validator.png)
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](/readme_assets/TODO.png)
+  - No errors were found when passing through the official [(Jigsaw) validator](/readme_assets/jigsaw_validator.png)
+- Lighthouse 
+  - Accessibility score was really high and no major issues seen there.  [Google Lighthouse](/readme_assets/lighthouse-score.png)
 
 ### Unfixed Bugs
 
-- TO DO
+- None spotted yet.
 
 ## Deployment
 
@@ -55,12 +57,12 @@
 - From the source section drop-down menu, select the Master Branch
 - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://rhoshan-d.github.io/autoghost/ 
+The live link can be found here - https://rhoshan-d.github.io/rock-paper/
 
 
 ## Credits 
 
-- TO DO
+- Google for the fonts
 
 ### Content 
 
