@@ -1,4 +1,9 @@
 const availableOptions = ['rock', 'paper', 'scissors']; // choices / options the player will have
+const randomWinPrize = ['100' , '200' , '500' , '900' , '1000']
+let gameInProgress = false
+let curRound = 0
+let userBalance = 0
+let MaxRounds = 2
 
 document.getElementById('rock').addEventListener('click', function() {
     PlayGame('rock');
@@ -12,25 +17,55 @@ document.getElementById('scissors').addEventListener('click', function() {
     PlayGame('scissors');
 });
 
-function GetBobsAnswer() { // TO DO (bob the computer :D)
-    return 'paper' 
+function GetBobsAnswer() {
+    let random = Math.floor(Math.random() * availableOptions.length)
+    return availableOptions[random]
+}
+
+function RandomPrize() {
+    let random = Math.floor(Math.random() * randomWinPrize.length)
+    return randomWinPrize[random]
 }
 
 function PlayGame(playerChoice) {
+    StartRoundChecks()
+    gameInProgress = true
     const computerRandomChoice = GetBobsAnswer();
     const resultElement = document.getElementById('result');
-    console.log('[LOG] Computers Choice: ' ,  computerRandomChoice)
-    console.log('[LOG] Players Choice: ' ,  playerChoice)
-    if (playerChoice === computerRandomChoice) { // if they are the same answer tied !
-            console.log('Tied!')
-            resultElement.innerText = ``;
-        return
+    let SetRound = document.getElementById('round');
+    if (playerChoice === computerRandomChoice) {
+        resultElement.innerText = `You tied! Bob choose ${computerRandomChoice}.`;
+        curRound = curRound 
+        SetRound.innerText = 'Current Round: ' + curRound + '/' + MaxRounds
     } else if (playerChoice == 'scissors' && computerRandomChoice == 'paper' || playerChoice == 'paper' && computerRandomChoice == 'rocks' || playerChoice == 'rock' && computerRandomChoice == 'scissors') {
-            console.log('YOU WIN BECAUSE ' , playerChoice + ' '  + 'BEATS ' + computerRandomChoice)
-            resultElement.innerText = ``;
-        return
+        resultElement.innerText = `You won! Bob choose ${computerRandomChoice}.`;
+        curRound += 1
+        SetRound.innerText = 'Current Round: ' + curRound + '/' + MaxRounds
     } else {
-        console.log("YOU DON'T WIN BECAUSE " , playerChoice + " "  + "BEATS " + computerRandomChoice)
+        resultElement.innerText = `You lost! Bob choose ${computerRandomChoice}.`;
+        curRound = 0
+        SetRound.innerText = 'Current Round: ' + curRound + '/' + MaxRounds
     }
+}
 
+function StartRoundChecks () {
+    if (gameInProgress) return; // prevent being ran mutiple times
+    setInterval(() => {
+        if (curRound >= MaxRounds) {
+            const resultElement = document.getElementById('result');
+            const playerBalance = document.getElementById('user-balance');
+            let SetRound = document.getElementById('round');
+            let randomMoneyAmount = RandomPrize();
+            let amount = Number(randomMoneyAmount)
+            let formattedAmount = amount.toLocaleString('en-US', { style: 'currency', currency: 'EUR' });
+            userBalance += amount
+            let formattedBalance = userBalance.toLocaleString('en-US', { style: 'currency', currency: 'EUR' });
+            curRound = 0
+            playerBalance.innerText = `Balance: ${formattedBalance}`
+            resultElement.innerHTML = `<b> You won all ${MaxRounds} rounds and won ${formattedAmount} !</b>`;
+            SetRound.innerText = 'Current Round: ' + curRound + '/' + MaxRounds
+            gameInProgress = false
+            return
+        }
+    }, 1000);
 }

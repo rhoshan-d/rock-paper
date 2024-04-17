@@ -23,6 +23,7 @@ button {
 
 /* main game container */
 .main-container {
+    position: relative;
     border: 2px solid black;
     border-radius: 40px;
     width: 50%;
@@ -30,4 +31,13 @@ button {
     padding: 5px 0;
     background: url('/assets/images/19449741.jpg') no-repeat fixed center;
     background-size: cover;
+}
+
+/* user balance (might need more work later) */
+#user-balance {
+    position: absolute;
+    top: 15%;
+    right: 10px;
+    color: black;
+    font-weight: bold;
 }
