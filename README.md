@@ -71,4 +71,4 @@ The live link can be found here - https://rhoshan-d.github.io/autoghost/
 
 ### Media
 
-- TO DO
+- Background picture taken from ![Background Pic](https://www.freepik.com/)
