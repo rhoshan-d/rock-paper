@@ -50,6 +50,8 @@ function PlayGame(playerChoice) {
 
 function StartRoundChecks () {
     if (gameInProgress) return; // prevent being ran mutiple times
+    const playerBalance = document.getElementById('user-balance');
+    playerBalance.innerText = userBalance == 0 ? `Balance: $0` : 'Balance: ' + userBalance.toLocaleString('en-US', { style: 'currency', currency: 'EUR' })
     setInterval(() => {
         if (curRound >= MaxRounds) {
             const resultElement = document.getElementById('result');
