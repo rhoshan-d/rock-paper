@@ -47,7 +47,7 @@ button:hover {
     border: 2px solid black;
     border-radius: 40px;
     width: 50%;
-    margin: 50vh auto 0;
+    margin: 40vh auto 0;
     padding: 5px 0;
     background: url('../images/background-image.webp') no-repeat fixed center;
     background-size: cover;
@@ -61,3 +61,39 @@ button:hover {
     color: black;
     font-weight: bold;
 }
+
+/* footer */
+
+footer {
+    margin-top: 150px;
+    color: #00f8b9;
+}
+
+/* for mobile screens */
+@media only screen and (max-width: 600px) {
+    
+    .main-container {
+      width: 90%;
+      margin-top: 20vh;
+      margin-bottom: 20px;
+    }
+
+    .header {
+        font-size: 1.8rem;
+    }
+  
+    .game-buttons-section {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    button {
+      margin: 10px auto;
+    }
+
+    footer {
+        margin-top: 120px;
+    }
+    
+}
+  

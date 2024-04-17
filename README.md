@@ -63,6 +63,8 @@ The live link can be found here - https://rhoshan-d.github.io/rock-paper/
 ## Credits 
 
 - Google for the fonts
+- freepik for the free images
+- convertio.co for converting jpg > webp
 
 ### Content 
 
@@ -71,3 +73,5 @@ The live link can be found here - https://rhoshan-d.github.io/rock-paper/
 ### Media
 
 - Background picture taken from ![Background Pic](https://www.freepik.com/)
+
+- Converted images JPG > webp ![Convertio](https://convertio.co/)
