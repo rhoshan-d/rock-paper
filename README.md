@@ -69,7 +69,7 @@ The live link can be found here - https://rhoshan-d.github.io/rock-paper/
 
 ### Content 
 
-- TO DO
+- All content used is under **Credits** section
 
 ### Media
 
